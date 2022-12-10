@@ -1,21 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package fibonacci;
 
+package fibonacci;
+import java.util.Scanner;
 /**
- *
- * @author Exxe
+  @author Exxe
  */
 public class Fibonacci {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        System.out.println("Hola");
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+       int num = leer.nextInt();
+       int i;
+       
+       for (i = 1; i < num; i++){
+            System.out.println("La sucesion es: "+ fibo(i) );
+        }
+        
     }
+ public static int fibo(int n){
+        int resultado = 0;
+        
+        if (n < 2){
+            resultado = n;
+        }else{
+            resultado = fibo(n -1) + fibo(n -2);
+        }
+        return resultado;
+    }    
     
 }
