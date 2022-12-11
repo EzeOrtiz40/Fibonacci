@@ -19,8 +19,8 @@ public class Fibonacci {
         
         for(i = 1; i<vector.length;i++){
           System.out.print(vector[i]+ " ");
-        }
-        System.out.println(" ");
+        } //este prin tiene que ser una funcion
+          System.out.println(" ");
          //System.out.println("La sucesion es: "+ vector ); 
     }
  public static int fibo(int n){
