@@ -30,7 +30,6 @@ public class Fibonacci {
             resultado = n;
         }else{
             resultado = fibo(n -1) + fibo(n -2);
-        }
-        return resultado;
+        }return resultado;
     }        
 }
