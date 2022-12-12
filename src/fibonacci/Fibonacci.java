@@ -24,7 +24,7 @@ public class Fibonacci {
          //System.out.println("La sucesion es: "+ vector ); 
     }
  public static int fibo(int n){
-        int resultado = 0;
+        int resultado;
         
         if (n < 2){
             resultado = n;
