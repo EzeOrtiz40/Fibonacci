@@ -11,7 +11,7 @@ public class Fibonacci {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese un numero: ");
        int num = leer.nextInt();
-       int i = 0;
+       int i;
        int [] vector = new int[num];
        for (i = 1; i < num; i++){
             vector[i] = fibo(i);
@@ -30,6 +30,7 @@ public class Fibonacci {
             resultado = n;
         }else{
             resultado = fibo(n -1) + fibo(n -2);
-        }return resultado;
+        }
+        return resultado;
     }        
 }
